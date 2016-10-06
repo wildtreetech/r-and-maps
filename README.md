@@ -55,8 +55,8 @@ workshop. Installing R and RStudio is straightforward: just download and
 install the version appropriate for your operating system. If you run into
 issues contact Tim: <tim@wildtreetech.com>
 
-- R: [Windows](https://cran.r-project.org/bin/windows/base/R-3.2.3-win.exe) | [Mac OS X 10.9+ (Mavericks) ](https://cran.r-project.org/bin/macosx/R-3.2.3.pkg) |  [Others](https://cran.r-project.org/)
-- RStudio: [Windows](https://download1.rstudio.org/RStudio-0.99.491.exe) | [Mac OS X 10.6+ (Snow Leopard) ](https://download1.rstudio.org/RStudio-0.99.491.dmg) |  [Others](https://www.rstudio.com/products/rstudio/download/)
+- R: [Windows](https://cran.r-project.org/bin/windows/base/R-3.3.1-win.exe) | [Mac OS X 10.9+ (Mavericks) ](https://cran.r-project.org/bin/macosx/R-3.3.1.pkg) |  [Others](https://cran.r-project.org/)
+- RStudio: [Windows](https://download1.rstudio.org/RStudio-0.99.903.exe) | [Mac OS X 10.6+ (Snow Leopard) ](https://download1.rstudio.org/RStudio-0.99.903.dmg) |  [Others](https://www.rstudio.com/products/rstudio/download/)
 
 We will use a few libraries that are not part of R by default. You can install
 them by running the following commands in RStudio:

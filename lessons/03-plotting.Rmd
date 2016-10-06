@@ -1,0 +1,12 @@
+# Publication quality figures
+
+Objectives:
+
+* To be able to load data from a CSV file
+* To be able to use ggplot2 to generate publication quality graphics
+* To understand the basic grammar of graphics, including the aesthetics
+  and geometry layers, adding statistics, transforming scales, and
+  colouring or panelling by groups
+
+
+http://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/

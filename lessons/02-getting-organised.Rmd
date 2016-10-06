@@ -1,0 +1,36 @@
+# Structuring your project
+
+Objectives:
+
+* To be able to create self-contained projects in RStudio
+* To be able to transfer things from the console to a file
+* To be able to create a R markdown document
+
+## Projects
+
+Creating a new project in R. How to organise folders.
+
+XXX https://github.com/swcarpentry/r-novice-gapminder/blob/gh-pages/_episodes/02-project-intro.md
+
+
+## Interactive work vs scripts
+
+Move from interactive work to a script. Why? How?
+
+
+## Reports
+
+Humans understand the world through narratives, or stories. Figures, tables
+and code by themselves do not tell a story. They are more like a collection of
+factoids. However a story without figures, tables and code is just a rumour or
+folklore. The combination of facts and narrative is what allows people to
+understand and be convinced.
+
+One way to combine your narrative with figures and tables is
+[Rmarkdown](http://rmarkdown.rstudio.com/lesson-1.html). You can use a single
+Rmarkdown file to both:
+
+* save and execute code; and
+* generate high quality reports that can be shared with your audience
+
+In fact most of this tutorial is written using Rmarkdown!

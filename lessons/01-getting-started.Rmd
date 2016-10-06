@@ -1,0 +1,12 @@
+# Getting started
+
+Objectives:
+
+* To be able to start and stop RStudio
+* To be familiar with the RStudio interface
+* To be able to compute simple mathematical functions interactively
+* To be able assign values to variables
+* To be able to install and load packages
+
+
+https://github.com/rhodyrstats/intro_r_workshop/blob/master/lessons/01_basics.Rmd

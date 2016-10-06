@@ -1,10 +1,15 @@
 # Structuring your project
 
+The scientific process is naturally incremental, and many projects start
+life as random notes, some code, then a manuscript, and eventually everything
+is a bit mixed together.
+
 Objectives:
 
 * To be able to create self-contained projects in RStudio
 * To be able to transfer things from the console to a file
 * To be able to create a R markdown document
+
 
 ## Projects
 
@@ -31,7 +36,8 @@ One way to combine your narrative with figures and tables is
 Rmarkdown file to both:
 
 * save and execute code; and
-* generate high quality reports that can be shared with your audience
+* generate high quality reports that can be shared with people who do not have
+  R installed.
 
 In fact most of this tutorial is written using Rmarkdown!
 

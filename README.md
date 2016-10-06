@@ -65,6 +65,7 @@ them by running the following commands in RStudio:
 install.packages("ggplot2")
 install.packages("rmarkdown")
 install.packages("leaflet")
+install.packages("DT")
 ```
 
 

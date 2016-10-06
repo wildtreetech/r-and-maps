@@ -1,5 +1,7 @@
 # Publication quality figures
 
+A picture is worth a thousand words. Let's create some figures.
+
 Objectives:
 
 * To be able to load data from a CSV file

@@ -1,0 +1,41 @@
+# Putting you data on the map
+
+Plots are nice, but interactive plots are nicer!
+
+Objectives:
+
+* To understand the use of interactive elements
+* To be able to place simple markers on a leaflet map
+* To be able to create popups with contents that depends on the data
+
+
+## DataTables
+
+Interactive tables are a good way to quickly explore your data, especially for
+others who are reading your report.
+
+```{r}
+library(DT)
+gapminder <- read.csv("data/gapminder-FiveYearData.csv")
+datatable(gapminder)
+```
+
+
+## Leaflet
+
+[Leaflet](http://leafletjs.com/) is a jacascript library which is commonly
+used to create interactive webmaps. There is a R library that allows you to
+use `leaflet` without having to know any javascript.
+
+
+## Resources
+
+Take a look at the [geospatial packages](https://ropensci.org/packages/) created
+by Ropensci.
+
+http://rstudio.github.io/leaflet/
+http://www.htmlwidgets.org/showcase_datatables.html
+http://www.htmlwidgets.org/showcase_dygraphs.html
+
+http://journocode.com/2016/01/28/your-first-choropleth-map/
+https://rpubs.com/walkerke/leaflet_choropleth

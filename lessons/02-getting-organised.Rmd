@@ -41,6 +41,15 @@ In fact most of this tutorial is written using Rmarkdown!
 > interface](https://www.r-bloggers.com/r-notebooks/). If you like Rmarkdown
 > check it out in the preview release of RStudio.
 
+There are several different output formats you can choose: HTML, PDF, Word.
+Depending on how much time you are willing to invest you can make these
+reports look extremely pretty. They are very useful for reports that change
+often or need to be produced frequently. Personally I would still give the
+individual plots to a graphic designer for a external publication, but for
+sharing within the organisation and friends Rmarkdown is a life saver. It
+means you always know exactly what data went into a figure or table and how
+it was made.
+
 > ## Output options
 >
 > Chunk output can be customized with [knitr](http://yihui.name/knitr/options/)

@@ -4,8 +4,8 @@ A picture is worth a thousand words. Let's create some figures.
 
 Objectives:
 
-* To be able to load data from a CSV file
-* To be able to use ggplot2 to generate publication quality graphics
+* To be able to use ggplot2 to generate publication quality graphics of
+  scatter and line plots
 * To understand the basic grammar of graphics, including the aesthetics
   and geometry layers, adding statistics, transforming scales, and
   colouring or panelling by groups

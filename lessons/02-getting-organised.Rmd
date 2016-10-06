@@ -7,6 +7,7 @@ is a bit mixed together. It does not have to be like that.
 Objectives:
 
 * To be able to create self-contained projects in RStudio
+* To be able to load data from a CSV file
 * To be able to transfer things from the console to a file
 * To be able to create a R markdown document
 
@@ -17,10 +18,22 @@ Creating a new project in R. How to organise folders.
 
 XXX https://github.com/swcarpentry/r-novice-gapminder/blob/gh-pages/_episodes/02-project-intro.md
 
+### Challenge
+
+Create a new project for today's workshop with a folder for the raw data,
+scripts, and outputs.
+
 
 ## Interactive work vs scripts
 
 Move from interactive work to a script. Why? How?
+
+### Challenge
+
+1. Load the data and inspect the first six rows interactively. Calculate the
+   sum of the `gdpPercap` column for the first six rows.
+
+1. Create a script that does the same thing.
 
 
 ## Reports
@@ -75,3 +88,11 @@ it was made.
 > Check the [R Markdown Reference
 > Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) for more knitr
 > options.
+
+### Challenge
+
+1. Create a Rmarkdown file that loads the gapminder data and shows the
+   first three rows of the data as a table and the sum of the `gdpPercap`
+   column for the first six rows.
+
+2. Add a sentence explaining what you are doing and why to the notebook.

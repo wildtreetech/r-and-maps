@@ -25,11 +25,11 @@ This will be an interactive workshop. Before arriving please:
 
 # Lessons and schedule
 
-1. [Intro to RStudio and basics](lessons/01-getting-started.Rmd)
-1. [Structuring your work](lessons/02-getting-organised.Rmd)
-1. [Making plots](lessons/03-plotting.Rmd)
-1. [What to do when you are stuck](lessons/04-getting-help.Rmd)
-1. [Interactive tables, plots and maps](lessons/05-interactive-maps.Rmd)
+1. [Intro to RStudio and basics](lessons/01-getting-started.Rmd) (15minutes)
+1. [Structuring your work](lessons/02-getting-organised.Rmd) (20minutes)
+1. [Making plots](lessons/03-plotting.Rmd) (60minutes)
+1. [What to do when you are stuck](lessons/04-getting-help.Rmd) (15minutes)
+1. [Interactive tables, plots and maps](lessons/05-interactive-maps.Rmd) (25minutes)
 
 
 # Personas, do you recognise yourself?

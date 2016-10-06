@@ -66,3 +66,17 @@ install.packages("ggplot2")
 install.packages("rmarkdown")
 install.packages("leaflet")
 ```
+
+
+# License
+
+The materials for this workshop are a remix of several existing projects and
+some original work. The existing work that has been remixed:
+
+* [Rhody R stats intro](https://github.com/rhodyrstats/intro_r_workshop) (CC0)
+* Software carpentry's [R novice gapminder](https://github.com/swcarpentry/r-novice-gapminder)
+  material (CC BY 4.0)
+
+All original work is under the following license:
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">R and maps</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/wildtreetech/ghbd" property="cc:attributionName" rel="cc:attributionURL">Tim Head</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

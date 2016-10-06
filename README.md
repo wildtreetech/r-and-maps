@@ -23,6 +23,15 @@ This will be an interactive workshop. Before arriving please:
 * introduce yourself on [the shared notepad](https://public.etherpad-mozilla.org/p/geong-r-and-maps-2016) of the workshop
 
 
+# Lessons and schedule
+
+1. [Intro to RStudio and basics](lessons/01-getting-started.Rmd)
+1. [Structuring your work](lessons/02-getting-organised.Rmd)
+1. [Making plots](lessons/03-plotting.Rmd)
+1. [What to do when you are stuck](lessons/04-getting-help.Rmd)
+1. [Interactive tables, plots and maps](lessons/05-interactive-maps.Rmd)
+
+
 # Personas, do you recognise yourself?
 
 If you are wondering who this workshop is for take a look at the [personas

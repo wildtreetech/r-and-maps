@@ -12,3 +12,18 @@ Objectives:
 
 
 http://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/
+
+
+Trend line for each continent, not that useful but makes the point:
+
+```{r}
+ggplot(data = gapminder,
+  aes(x=gdpPercap, y=lifeExp, size=pop, shape=continent, color=country, group=continent)) +
+  geom_point(alpha=0.5) + scale_x_log10() +
+  geom_smooth(method='lm', aes(colour=continent)) +
+  theme(legend.position = 'none')
+```
+This works because:
+```{r}
+ggplot(data = gapminder[gapminder$continent=='Europe',], aes(x=gdpPercap, y=lifeExp, size=pop, shape=continent, color=country, group=continent)) + geom_point(alpha=0.5) + scale_x_log10() + geom_smooth(method='lm', aes(colour=continent)) + theme(legend.position = 'none')
+```

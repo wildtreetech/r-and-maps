@@ -111,6 +111,7 @@ guides to asking good questions:
 
 This is a list of resources to help you find answers and examples:
 
+* Take a look at `Help > Cheatsheets` in RStudio
 * [Statistics StackOverflow](http://stats.stackexchange.com/), focuses on
   statistics, but statistics geeks use R!
 * [Google](http://google.com), how strong is your google-fu?

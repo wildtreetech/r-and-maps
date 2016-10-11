@@ -20,7 +20,7 @@ will depend very much on the way you ask your question.
 >
 > This document uses "mailing list" as a shorthand for "all kinds
 > of written communication on the internet". Replace with forum,
-> StackOverflow, slack chat, skype as appropriate.
+> Stack Overflow, Slack, Skype as appropriate.
 
 The title/subject is the first thing people will see of your
 question. If it is not interesting, they will not read the rest.
@@ -73,15 +73,15 @@ the big goal, and not the particular step you are stuck with.
 
 Help others reproduce your problem by including the necessary details. If
 the problem is with code you wrote, include it. However do not post all of your
-program. Try and make a minimal example that demosntrates the problem. Stack
-overflow has a good guide on creating a [minimal, complete, and verifiable
+program. Try and make a minimal example that demonstrates the problem. Stack
+Overflow has a good guide on creating a [minimal, complete, and verifiable
 example](http://stackoverflow.com/help/mcve).
 
 You have to be precise. Do not simply dump all possible information that
 might be relevant. Vague questions receive vague answers. Being precise is
-useful for at least three reasons. One: being seen to invest effort in simplifying
-the question makes it more likely you'll get an answer, Two: simplifying
-the question makes it more likely you'll get a useful answer. Three: In
+useful for at least three reasons. (1) Being seen to invest effort in simplifying
+the question makes it more likely you'll get an answer (2) Simplifying
+the question makes it more likely you'll get a useful answer. (3) In
 the process of refining your bug report, you may develop a fix or workaround yourself.
 
 When people post replies or questions about your problem, follow them up. If
@@ -105,21 +105,21 @@ guides to asking good questions:
    Eric Raymond
  * [Writing the perfect question](http://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
    by Jon Skeet
- * [How do I ask a good question?](http://stackoverflow.com/help/how-to-ask) on stack overflow
+ * [How do I ask a good question?](http://stackoverflow.com/help/how-to-ask) on Stack Overflow
 
 ## Where to go
 
 This is a list of resources to help you find answers and examples:
 
 * Take a look at `Help > Cheatsheets` in RStudio
-* [Statistics StackOverflow](http://stats.stackexchange.com/), focuses on
+* [Statistics StackOverflow](http://stats.stackexchange.com/): focuses on
   statistics, but statistics geeks use R!
-* [Google](http://google.com), how strong is your google-fu?
-* [R project's "where to get help"](https://www.r-project.org/help.html), links
+* [Google](http://google.com): how strong is your google-fu?
+* [R project's "where to get help"](https://www.r-project.org/help.html): links
   to lots of useful resources
-* a mailing list/chat inside your organisation, good place to go for very, very,
+* a mailing list/chat inside your organisation: good place to go for very, very,
   specific questions.
-* [The Comprehensive R Archive Network](https://cran.r-project.org/) every
+* [The Comprehensive R Archive Network](https://cran.r-project.org/): every
   library is listed here with examples (vignette) and documentation
 
 XXX bottom of https://github.com/rhodyrstats/intro_r_workshop/blob/master/lessons/01_basics.Rmd

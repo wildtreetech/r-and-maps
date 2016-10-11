@@ -23,8 +23,8 @@ datatable(gapminder)
 
 ## Leaflet
 
-[Leaflet](http://leafletjs.com/) is a jacascript library which is commonly
-used to create interactive webmaps. There is a R library that allows you to
+[Leaflet](http://leafletjs.com/) is a javascript library that is commonly
+used to create interactive webmaps. There is an R library that allows you to
 use `leaflet` without having to know any javascript.
 
 
@@ -33,9 +33,9 @@ use `leaflet` without having to know any javascript.
 Take a look at the [geospatial packages](https://ropensci.org/packages/) created
 by Ropensci.
 
-http://rstudio.github.io/leaflet/
-http://www.htmlwidgets.org/showcase_datatables.html
+http://rstudio.github.io/leaflet/  
+http://www.htmlwidgets.org/showcase_datatables.html  
 http://www.htmlwidgets.org/showcase_dygraphs.html
 
-http://journocode.com/2016/01/28/your-first-choropleth-map/
+http://journocode.com/2016/01/28/your-first-choropleth-map/  
 https://rpubs.com/walkerke/leaflet_choropleth

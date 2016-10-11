@@ -4,7 +4,7 @@ A picture is worth a thousand words. Let's create some figures.
 
 Objectives:
 
-* To be able to use ggplot2 to generate publication quality graphics of
+* To be able to use `ggplot2` to generate publication quality graphics of
   scatter and line plots
 * To understand the basic grammar of graphics, including the aesthetics
   and geometry layers, adding statistics, transforming scales, and
@@ -18,12 +18,27 @@ Trend line for each continent, not that useful but makes the point:
 
 ```{r}
 ggplot(data = gapminder,
-  aes(x=gdpPercap, y=lifeExp, size=pop, shape=continent, color=country, group=continent)) +
-  geom_point(alpha=0.5) + scale_x_log10() +
-  geom_smooth(method='lm', aes(colour=continent)) +
-  theme(legend.position = 'none')
+       aes(x=gdpPercap,
+           y=lifeExp,
+           size=pop,
+           shape=continent,
+           color=country,
+           group=continent)) +
+geom_point(alpha=0.5) + scale_x_log10() +
+geom_smooth(method='lm', aes(colour=continent)) +
+theme(legend.position = 'none')
 ```
 This works because:
 ```{r}
-ggplot(data = gapminder[gapminder$continent=='Europe',], aes(x=gdpPercap, y=lifeExp, size=pop, shape=continent, color=country, group=continent)) + geom_point(alpha=0.5) + scale_x_log10() + geom_smooth(method='lm', aes(colour=continent)) + theme(legend.position = 'none')
+ggplot(data=gapminder[gapminder$continent=='Europe',],
+       aes(x=gdpPercap,
+           y=lifeExp,
+           size=pop,
+           shape=continent,
+           color=country,
+           group=continent)) +
+geom_point(alpha=0.5) +
+scale_x_log10() +
+geom_smooth(method='lm', aes(colour=continent)) +
+theme(legend.position = 'none')
 ```

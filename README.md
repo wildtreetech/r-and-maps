@@ -5,14 +5,14 @@
 # Workshop outline
 
 An introduction to reproducible data analysis with R. The aim of this
-workshop is to help you decide if R is for you or not and how to learn
+workshop is to help you decide if R is for you and learn
 more about it. We will cover how to
-get started and structure your projects in R. Create publication quality
-figures and tables that can be updated with a click of a button. How to
-create reports that contain both narrative/prose and figures/tables. Furthermore
-we will show you how to learn more (self-study) and how to get help when
+get started with R and structure your projects in it. Create publication-quality
+figures and tables that can be updated with the click of a button. Produce
+reports that contain both narrative/prose and figures/tables. Furthermore,
+we will show you how to learn on your own (self-study) and how to get help when
 you are stuck. To get the most out of the workshop you will have to have
-some experience with basic concepts of programming (in any language) like:
+some experience with basic concepts of programming (in any language) like
 variables, functions and libraries.
 
 This will be an interactive workshop. Before arriving please:
@@ -42,18 +42,18 @@ of fictional attendees][personas] we created to help design the workshop.
 
 # Learning objectives
 
-At the end of the workshop I will ...
+At the end of the workshop you will ...
 
-* ... be able to create a new project that contains an analysis script
-  which takes raw data and produces figures and tables from it without
+* … be able to create a new project that contains an analysis script
+  that takes raw data and produces figures and tables from it without
   modifying the raw data.
-* ... be able to place markers on an interactive map and share it with
-  my colleagues.
-* ... be able to recognise when I am stuck.
-* ... know where to find documentation and how to ask good questions to
-  maximise my chances of getting help.
-* ... know that there is no magic: the programs I use are no different
-  in principle from those that I build.
+* … be able to place markers on an interactive map and share it with
+  your colleagues.
+* … be able to recognise when you are stuck.
+* … know where to find documentation and how to ask good questions to
+  maximise your chances of getting help.
+* … know that there is no magic: the programs you use are no different
+  in principle from those that you build.
 
 
 # Software
@@ -62,7 +62,7 @@ For this workshop will be using R and RStudio. As the workshop is only 3hrs
 long you will have to have these installed and working prior to the
 workshop. Installing R and RStudio is straightforward: just download and
 install the version appropriate for your operating system. If you run into
-issues contact Tim: <tim@wildtreetech.com>
+issues contact Tim: <[tim@wildtreetech.com](mailto:tim@wildtreetech.com)>.
 
 - R: [Windows](https://cran.r-project.org/bin/windows/base/R-3.3.1-win.exe) | [Mac OS X 10.9+ (Mavericks) ](https://cran.r-project.org/bin/macosx/R-3.3.1.pkg) |  [Others](https://cran.r-project.org/)
 - RStudio: [Windows](https://download1.rstudio.org/RStudio-0.99.903.exe) | [Mac OS X 10.6+ (Snow Leopard) ](https://download1.rstudio.org/RStudio-0.99.903.dmg) |  [Others](https://www.rstudio.com/products/rstudio/download/)
@@ -77,8 +77,13 @@ install.packages("leaflet")
 install.packages("DT")
 ```
 
+Also make sure that your packages are up-to-date by running:
 
-# License
+```R
+update.packages()
+```
+
+# Licence
 
 The materials for this workshop are a remix of several existing projects and
 some original work. The existing work that has been remixed:

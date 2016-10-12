@@ -1,5 +1,9 @@
 # Getting started
 
+Do you smell that shiny new tool smell? It is a bit like that new car
+smell. Take a moment to look around and let it all sink in.
+
+
 Objectives:
 
 * To be able to start and stop RStudio
@@ -9,4 +13,110 @@ Objectives:
 * To be able to install and load packages
 
 
-https://github.com/rhodyrstats/intro_r_workshop/blob/master/lessons/01_basics.Rmd
+## RStudio
+
+Over the last several years, RStudio has become a very popular IDE (integrated
+development environment) for R. In addition to interacting with the R Console,
+RStudio has many extras built in including version control integration, package
+building, reproducible research, de-bugging, and built-in text editor with
+smart highlighting and code completion. This is the environment we will be
+using for the workshop and should set you up for continued learning with R.
+
+> ## Workshop format
+>
+> Through out the workshop we will alternate between me demoing things
+> and you doing things yourself. Ask questions, interupt and help each
+> other. Right now watch the demo, you will get a chance to do things
+> as part of the challenges.
+
+RStudio should be available from All Programs at the Start Menu on Windows. On
+Mac it is in the Applications folder.
+
+![rstudio](imgs/rstudio.jpg)
+
+
+### Challenge
+1. Start RStudio.
+2. Find the Console Pane. Look at the Environment, History Pane. Look at
+   the Files, Plots, Packages, etc. pane.
+
+
+## RStudio as calculator
+
+Using R interactively is very powerful. It allows you to go back and forth
+in your analysis. It makes it very easy to try out things. I use it all the
+time when exploring new data or a new visualisation.
+
+To get familiar with using the R console let's do some basic maths:
+
+```{r}
+2 + 2
+3 * 4
+42 / 10
+2 == 2
+# more complicated math also works
+```
+
+You can also store the result of a computation in a new variable so you can
+reuse it later. You can name your variables however you like. However variables
+cannot start with a digit, contain spaces, or (most) special characters.
+Underscores and periods are allowed. To store a value in a variable use `<-`.
+
+```{r}
+four <- 2 + 2
+four
+four * 3
+my_name <- "Tim"
+my_name
+```
+
+### Challenge
+1. Compute the sum of 235 and 7568
+2. Create two variables called `number1` and `number2`. Give them the values
+   42 and 3 respectively.
+3. Use `number1` and `number2` and maths(!) to store 126 in a variable `number3`.
+4. Look around RStudio to find the "Environment" pane, can your recognise the
+   variables you created?
+
+
+## Extending R
+
+Much of the power of a ecosystem like R comes from the ability to create
+and use packages. Packages allow you to use programs other people wrote within
+your analysis. For example we will use a package called `ggplot2` which contains
+methods for plotting your data (as opposed to having to invent it all ourselves).
+
+CRAN or The Comprehensive R Archive Network. This is where you download R
+and also where most will gain access to packages. Not much else to say about
+this now other than to be aware of it.
+
+### Installing packages
+
+When a package gets installed, that means the source is downloaded and put
+into your library. A default library location is set for you so no need to
+worry about that. In fact on Windows and Mac most of this is pretty automatic.
+
+To install the `ggplot2` library run:
+
+```{r}
+install.packages("ggplot2")
+```
+
+> ## Prerequisites
+>
+> If you followed the prerequisites you should already have all the packages
+> we will need installed.
+
+Once you installed a new package you can add it to your R session with:
+
+```{r}
+library("ggplot2")
+```
+
+This will load the package called `ggplot2` and make its contents available for
+use in your R session.
+
+### Challenge
+1. Install the following packages: `ggplot2`, `rmarkdown`, `leaflet`, and
+   `DT`.
+2. Load the `DT` package.

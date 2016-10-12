@@ -16,7 +16,7 @@ Objectives:
 
 Most people tend to organize their projects like this:
 
-![badlayout](imgs/bad_layout.png)
+![badlayout](../imgs/bad_layout.png)
 
 There are many reasons why we should *ALWAYS* avoid this:
 

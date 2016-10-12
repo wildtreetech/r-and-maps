@@ -32,7 +32,7 @@ using for the workshop and should set you up for continued learning with R.
 RStudio should be available from All Programs at the Start Menu on Windows. On
 Mac it is in the Applications folder.
 
-![rstudio](imgs/rstudio.jpg)
+![rstudio](../imgs/rstudio.jpg)
 
 
 ### Challenge

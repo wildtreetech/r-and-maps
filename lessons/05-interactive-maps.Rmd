@@ -99,7 +99,7 @@ load shapefile with adm0 level boundaries between countries
 ```{r}
 world <- rgdal::readOGR("/Users/thead/Downloads/gadm28_levels/", layer="gadm28_adm0")
 keep <- c("NAME_LOCAL", "POPSQKM") # columns to keep
-eu <- world[world$EU==1, (names(xx) %in% keep)]
+eu <- world[world$EU==1, (names(world) %in% keep)]
 ```
 
 ## Plot population density in Europe
@@ -109,6 +109,10 @@ mapview(eu, zcol="POPSQKM", at=seq(0,500, 100), legend=TRUE)
 ```
 
 ```{r}
+library(sp)
+library(rgdal)
+library(raster)
+
 # create a SpatialPointsDataFrame
 eu.centers <- data.frame(coordinates(eu))
 names(eu.centers) <- c("x", "y")
@@ -122,6 +126,20 @@ mapview(euPoints)
 mapview(euPoints, cex='POPSQKM', legend=TRUE)
 ```
 
+```{r}
+# using points for a world wide view
+wp <- SpatialPointsDataFrame(coordinates(world), world@data)
+projection(wp) <- projection(world)
+mapview(wp, cex='POP2000', zcol=c('POPSQKM', "gdpPercap"), legend=TRUE)
+```
+
+```{r}
+# join gadm dataset with gapminder
+gm <- read.csv("gapminder.csv")
+gm$NAME = toupper(gm$country)
+df <- gm[gm$year==2007,]
+world@data = data.frame(world@data, df[match(world@data[,"NAME_ISO"], df[,"NAME"]),])
+```
 
 ## Leaflet
 

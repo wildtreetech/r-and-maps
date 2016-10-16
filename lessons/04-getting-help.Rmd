@@ -122,9 +122,13 @@ This is a list of resources to help you find answers and examples:
 * [The Comprehensive R Archive Network](https://cran.r-project.org/): every
   library is listed here with examples (vignette) and documentation
 
-XXX bottom of https://github.com/rhodyrstats/intro_r_workshop/blob/master/lessons/01_basics.Rmd
 
-> ## The ggplot2 CRAN page
->
-> Take a look at the [`ggplot2` CRAN page](https://cran.r-project.org/web/packages/ggplot2/index.html). Can you
-> find the manual and vignettes?
+## Other Resources
+As mentioned earlier, there are TOO many resources to mention and everyone
+has their favorites.  Below just a few:
+
+- [R For Cats](http://rforcats.net/): Basic introduction site, meant to be a gentle and light-hearted introduction
+- [Advanced R](http://adv-r.had.co.nz/): Web home of Hadley Wickham's new book.  Gets into more advanced topics, but also covers the basics in a great way.
+- [Why R is Hard To Learn](http://r4stats.com/articles/why-r-is-hard-to-learn/): Long and detailed blog post discussing some of the challenges people often face when learning R.
+- [CRAN Cheatsheets](http://cran.r-project.org/doc/contrib/Short-refcard.pdf): A good cheat sheet from the official source
+- [RStudio Cheatsheets](http://www.rstudio.com/resources/cheatsheets/): Additional cheat sheets from RStudio. Check out the data wrangling one.

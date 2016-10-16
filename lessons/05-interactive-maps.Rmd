@@ -14,7 +14,8 @@ Objectives:
 The reports you create with Rmarkdown are just webpages underneath. This means
 you can embed anything that your browser knows how to display. Including
 interactive elements. These are useful if you have a lot of data or want to
-let the reader explore the data themselves.
+let the reader explore the data themselves. A good starting point are the
+[R htmlwidgets](http://www.htmlwidgets.org/index.html).
 
 
 ## DataTables
@@ -30,6 +31,7 @@ library(DT)
 gapminder <- read.csv("data/gapminder-FiveYearData.csv")
 datatable(gapminder)
 ```
+![](../imgs/data-table.gif)
 
 It really is this easy to use.
 

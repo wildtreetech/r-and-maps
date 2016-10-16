@@ -75,8 +75,14 @@ them by running the following commands in RStudio:
 install.packages("ggplot2")
 install.packages("rmarkdown")
 install.packages("leaflet")
+install.packages("mapview")
+install.packages("rgdal")
+install.packages("sp")
 install.packages("DT")
 ```
+
+Install these packages by starting RStudio and executing each line in the
+console.
 
 Also make sure that your packages are up-to-date by running:
 

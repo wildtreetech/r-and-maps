@@ -1,8 +1,3 @@
----
-output:
-  html_document:
-    self_contained: no
----
 # Publication quality figures
 
 A picture is worth a thousand words. Let's create some figures.
@@ -286,7 +281,9 @@ Advanced:
   - Transform the x axis to better visualise the data spread.
   - Add a facet layer to panel the density plots by year.
 
-## Solution to challenge
+---
+
+#### Solution to challenge
 
 ```{r}
 ggplot(data = gapminder, aes(x = gdpPercap, fill=continent)) +

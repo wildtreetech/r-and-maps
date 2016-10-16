@@ -45,7 +45,34 @@ It really is this easy to use.
 
 ## The mapview library
 
-Fast exploring of your spatial dataset.
+Quoting from the
+[`mapview`](http://environmentalinformatics-marburg.github.io/mapview/introduction.html)
+documentation:
+
+---
+
+`mapview` is an R package created to help researchers during their spatial
+data analysis workflow. It provides functions to very quickly and conveniently
+create interactive visualisations of spatial data.
+
+`mapview` was created o fill the gap of quick (not presentation grade)
+interactive plotting to examine and visually investigate spatial data.
+So far, one had to either:
+
+* (sp)plot the data in R and then toggle back and forth between
+  the static plots; or
+* save the data to the disk and then open in QGIS or similar to
+  interactively examine the results.
+
+---
+
+This continues the theme of interactively exploring a new dataset or a new idea
+on an old dataset. `mapview` is probably not the right tool to produce the
+final product that you distribute to users, but it is extremely useful for
+your day-to-day work and sharing with collaborators.
+
+We will briefly switch away from the gapminder dataset to
+one with information about all the cantons in Switzerland.
 
 ```{r}
 library(mapview)
@@ -53,6 +80,9 @@ library(mapview)
 data("gadmCHE")
 
 mapview(gadmCHE)
+```
+
+```{r}
 mapview(gadmCHE, popup=popupTable(gadmCHE, zcol = c("NAME_1")))
 ```
 

@@ -117,7 +117,7 @@ ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country, color=continent)) +
 
 Instead of adding a `geom_point` layer, we've added a `geom_line` layer. We've
 added the **by** *aesthetic*, which tells `ggplot` to draw a line for each
-country.
+country. It groups rows in our data by country.
 
 But what if we want to visualize both lines and points on the plot? We can
 simply add another layer to the plot:

@@ -242,6 +242,12 @@ The `facet_wrap` layer took a "formula" as its argument, denoted by the tilde
 (~). This tells R to draw a panel for each unique value in the country column
 of the gapminder dataset.
 
+```{r}
+# or we group them by continent
+ggplot(az.countries, aes(x=year, y=lifeExp, color=country)) +
+  geom_line() + facet_wrap(~continent)
+```
+
 
 ## Modifying text
 

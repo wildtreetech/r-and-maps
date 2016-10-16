@@ -72,29 +72,38 @@ final product that you distribute to users, but it is extremely useful for
 your day-to-day work and sharing with collaborators.
 
 We will briefly switch away from the gapminder dataset to
-one with information about all the cantons in Switzerland.
+one with information about all the cantons in Switzerland. This dataset contains
+the outlines of the cantons, their names, and a few variations of their names.
+
+Let's take a quick look at the data without using a map:
 
 ```{r}
 library(mapview)
 
 data("gadmCHE")
 
+summary(gadmCHE@data)
+```
+
+`gadmCHE` itself is an object that knows about spatial representations and
+the data itself. The data is stored in the `data` slot which we can access as
+`gadmCHE@data`. It is not the most exciting dataset, but let's use it for a
+moment.
+
+```{r}
 mapview(gadmCHE)
 ```
+
+This uses `leaflet`, a very powerful JavaScript library to draw a interactive
+map and draws the outlines of the cantons on top. Now we can click on a canton
+and the popup shows all the columns for this canton. We can control what is
+visible in the popup via:
 
 ```{r}
 mapview(gadmCHE, popup=popupTable(gadmCHE, zcol = c("NAME_1")))
 ```
 
-
-## Add a new field/columns
-
-```{r}
-gadmCHE@data$RandNum <- runif(nrow(gadmCHE@data))
-```
-
-
-## Points are better for popups
+If your polygons are very large/complicated 
 
 ```{r}
 

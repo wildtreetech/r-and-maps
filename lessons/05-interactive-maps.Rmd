@@ -191,15 +191,16 @@ mapview(euPoints)
 mapview(euPoints, cex='POPSQKM', legend=TRUE)
 ```
 
+This is the exciting part, an overview of the whole world showing
+population density and GDP per capita:
+
 ```{r}
 # join gadm dataset with gapminder
 gm <- read.csv("gapminder.csv")
 gm$NAME = toupper(gm$country)
 df <- gm[gm$year==2007,]
 world@data = data.frame(world@data, df[match(world@data[,"NAME_ISO"], df[,"NAME"]),])
-```
 
-```{r}
 # using points for a world wide view
 wp <- SpatialPointsDataFrame(coordinates(world), world@data)
 projection(wp) <- projection(world)

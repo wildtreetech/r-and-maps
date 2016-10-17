@@ -103,7 +103,12 @@ visible in the popup via:
 mapview(gadmCHE, popup=popupTable(gadmCHE, zcol = c("NAME_1")))
 ```
 
-If your polygons are very large/complicated 
+Now the popup only contains the value of the `NAME_1` field.
+
+If your polygons are very large/complicated drawing their outlines will take
+some time. Think drawing the outlines of all countries in the world. Luckily
+it is fairly straightforward to obtain the centres of each polygon and draw
+a marker there instead of the outline.
 
 ```{r}
 
@@ -135,7 +140,9 @@ pointsCHE <- sp::SpatialPointsDataFrame(centres, gadmCHE@data)
 
 ## Loading a shapefile
 
-load shapefile with adm0 level boundaries between countries
+The `rgdal` library can read most of the common file formats in which geographic
+information is stored (GeoJSON, shapefiles, etc). To load our shapefile with
+adm0 level boundaries (fancy speak for outlines of countries):
 
 ```{r}
 world <- rgdal::readOGR("/Users/thead/Downloads/gadm28_levels/", layer="gadm28_adm0")
@@ -143,11 +150,28 @@ keep <- c("NAME_LOCAL", "POPSQKM") # columns to keep
 eu <- world[world$EU==1, (names(world) %in% keep)]
 ```
 
-## Plot population density in Europe
+This reads in the file `/Users/thead/Downloads/gadm28_levels/gadm28_adm0.shp`
+which contains high quality outlines and some other information. To make it a
+bit more manageable I removed all but the local name and population density.
+Then select only those countries which are in the EU. This is mainly to
+keep things moving at a good pace for the tutorial.
+
+We can now show the outline of the countries in the EU and colour them
+by their population density.
 
 ```{r}
 mapview(eu, zcol="POPSQKM", at=seq(0,500, 100), legend=TRUE)
 ```
+
+This command also set the range of the colour scale. There is a surprising
+range of population densities in the EU (from 10people/km^2 to 1100people/km^2)
+wich makes it a bit tricky to display.
+
+The material below are simply variations on the above but using real data.
+Computing the centres of the EU countries, then using those on the map to
+speed up plotting, followed by doing the same for the whole world and then
+finally returning to our gapminder dataset, joining it with the outlines of
+countries and displaying it.
 
 ```{r}
 library(sp)
@@ -168,13 +192,6 @@ mapview(euPoints, cex='POPSQKM', legend=TRUE)
 ```
 
 ```{r}
-# using points for a world wide view
-wp <- SpatialPointsDataFrame(coordinates(world), world@data)
-projection(wp) <- projection(world)
-mapview(wp, cex='POP2000', zcol=c('POPSQKM', "gdpPercap"), legend=TRUE)
-```
-
-```{r}
 # join gadm dataset with gapminder
 gm <- read.csv("gapminder.csv")
 gm$NAME = toupper(gm$country)
@@ -182,11 +199,20 @@ df <- gm[gm$year==2007,]
 world@data = data.frame(world@data, df[match(world@data[,"NAME_ISO"], df[,"NAME"]),])
 ```
 
+```{r}
+# using points for a world wide view
+wp <- SpatialPointsDataFrame(coordinates(world), world@data)
+projection(wp) <- projection(world)
+mapview(wp, cex='POP2000', zcol=c('POPSQKM', "gdpPercap"), legend=TRUE)
+```
+
+
 ## Leaflet
 
 [Leaflet](http://leafletjs.com/) is a javascript library that is commonly
-used to create interactive webmaps. There is an R library that allows you to
-use `leaflet` without having to know any javascript.
+used to create interactive webmaps. Together with openlayers I would claim it
+is the "industry standard" for making interactive maps. There is an R library
+that allows you to use `leaflet` without having to know any javascript.
 
 Use this if you want ultimate control over your map. In exchange it is a
 little less easy to use than `mapview`.
